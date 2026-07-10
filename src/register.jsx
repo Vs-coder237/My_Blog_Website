@@ -1,16 +1,17 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 function Register() {
-
+    
   return (
     <>
       <div className='w-screen h-screen flex items-center justify-center bg-blue-400'>
         <div className='w-110 h-200 bg-white rounded-2xl'>
           <div className='flex justify-center items-center mt-5'>
-            <div class="flex flex-col gap-1"> 
-              <span class="font-serif text-8xl font-bold tracking-tight text-gray-900 dark:text-white">bloggy</span> 
-              <div class="w-30 h-1.5 bg-amber-400 rounded-full"></div>
+            <div className="flex flex-col gap-1"> 
+              <span className="font-serif text-8xl font-bold tracking-tight text-gray-900 dark:text-white">bloggy</span> 
+              <div className="w-30 h-1.5 bg-amber-400 rounded-full"></div>
             </div>
           </div>
 
@@ -22,7 +23,7 @@ function Register() {
             <div>
               <label className="block mb-2 font-bold text-gray-700" htmlFor='email'>Name</label>
               <div className="flex items-center border rounded-xl px-4 py-3 focus-within:ring-2 focus-within:ring-indigo-500">
-                <i class="fa-solid fa-user text-gray-400"></i>
+                <i className="fa-solid fa-user text-gray-400"></i>
                 <input type="email" placeholder="Enter Full Name" class="ml-3 w-full outline-none bg-transparent"/>
               </div>
             </div>
@@ -30,7 +31,7 @@ function Register() {
             <div>
               <label className="block mb-2 font-bold text-gray-700" htmlFor='email'>Email Address</label>
               <div className="flex items-center border rounded-xl px-4 py-3 focus-within:ring-2 focus-within:ring-indigo-500">
-                <i class="fa-solid fa-envelope text-gray-400"></i>
+                <i className="fa-solid fa-envelope text-gray-400"></i>
                 <input type="email" placeholder="example@gmail.com" class="ml-3 w-full outline-none bg-transparent"/>
               </div>
             </div>
@@ -38,7 +39,7 @@ function Register() {
             <div>
               <label className="block mb-2 font-bold text-gray-700" htmlFor='email'>Password</label>
               <div className="flex items-center border rounded-xl px-4 py-3 focus-within:ring-2 focus-within:ring-indigo-500">
-                <i class="fa-solid fa-lock text-gray-400"></i>
+                <i className="fa-solid fa-lock text-gray-400"></i>
                 <input type="password" placeholder=".................." class="ml-3 w-full outline-none bg-transparent"/>
               </div>
             </div>
@@ -46,7 +47,7 @@ function Register() {
             <div>
               <label className="block mb-2 font-bold text-gray-700" htmlFor='email'>Confirm Password</label>
               <div className="flex items-center border rounded-xl px-4 py-3 focus-within:ring-2 focus-within:ring-indigo-500">
-                <i class="fa-solid fa-lock text-gray-400"></i>
+                <i className="fa-solid fa-lock text-gray-400"></i>
                 <input type="password" placeholder=".................." class="ml-3 w-full outline-none bg-transparent"/>
               </div>
             </div>

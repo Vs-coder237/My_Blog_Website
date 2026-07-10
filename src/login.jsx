@@ -1,7 +1,8 @@
 import { useState } from 'react'
-import imageLogo from './assets/blog2.jpeg'
+import { useNavigate } from 'react-router-dom'
 
 function Login() {
+    const navigation = useNavigate()
 
   return (
     <>
@@ -10,7 +11,7 @@ function Login() {
           <div className='flex justify-center items-center mt-10'>
             <div class="flex flex-col gap-1"> 
               <span class="font-serif text-9xl font-bold tracking-tight leading-none text-gray-900 dark:text-white">bloggy</span> 
-              <div class="w-30 h-1.5 bg-amber-400 rounded-full"></div>
+              <div class="w-37 h-1.5 bg-amber-400 rounded-full"></div>
             </div>
           </div>
 
@@ -62,7 +63,7 @@ function Login() {
 
           <div className="text-center mt-6">
             <span className="text-gray-600">Don't have an account?</span>
-            <a href="#" className="text-indigo-600 font-semibold hover:underline m-3">Create Account</a>
+            <a href="#" onClick={() => navigate('/Register')} className="text-indigo-600 font-semibold hover:underline m-3">Create Account</a>
           </div>
         </div>
       </div>
