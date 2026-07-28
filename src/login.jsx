@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import google from './assets/google.svg'
+import facebook from './assets/facebook.svg'
 
 function Login() {
-    const navigation = useNavigate()
+  const navigate = useNavigate()
 
   return (
     <>
@@ -55,15 +57,16 @@ function Login() {
             <hr className='h-0.5 w-[30%]'/>
           </div>
 
-          <div>
-            <a href=""><i class="fa-solid fa-google text-gray-400"></i></a>
+          <div className='flex items-center justify-center gap-10 mt-10'>
+            <button className='flex items-center justify-center bg-amber-100 w-12 h-12 rounded-full'><img src={google} alt="Google icon" className='w-6 h-6'/></button>
+            <button className='flex items-center justify-center bg-amber-100 w-12 h-12 rounded-full'><img src={facebook} alt="Google icon" className='w-6 h-6'/></button>
           </div>
 
           
 
-          <div className="text-center mt-6">
+          <div className="text-center mt-5">
             <span className="text-gray-600">Don't have an account?</span>
-            <a href="#" onClick={() => navigate('/Register')} className="text-indigo-600 font-semibold hover:underline m-3">Create Account</a>
+            <button onClick={() => navigate("/Register")} className="text-indigo-600 font-semibold hover:underline m-3 cursor-pointer">Create Account</button>
           </div>
         </div>
       </div>

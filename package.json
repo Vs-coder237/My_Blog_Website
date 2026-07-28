@@ -1,4 +1,8 @@
 {
+  "#imports/*": {
+    "#components/*": "./src/components/*",
+    "#lib": "./src/lib/*.js"
+  },
   "name": "login_signup",
   "private": true,
   "version": "0.0.0",
